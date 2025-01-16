@@ -8,20 +8,32 @@
 </head>
 <body>
     <header>
-        <img src="" alt="Logo">
+        <a href="index.html"><img id="logo" src="images/Logo.svg" alt="Logo"></a>
+        <div id="social-container">
+            <img class="social-icon" src="images/Facebook.svg" alt="Facebook">
+            <img class="social-icon" src="images/Instagram.svg" alt="Instagram">
+            <img id="user-icon" src="images/User.svg" alt="User">
+        </div>
     </header>
     <nav>
-        <ul class="navbar-links">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#reviews">REVIEWS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#book-appointment">BOOK APPOINTMENT</a></li>
+        <ul id="navbar-list">
+            <li><a class="nav-link" href="#about">ABOUT</a></li>
+            <li><a class="nav-link" href="#gallery">GALLERY</a></li>
+            <li><a class="nav-link" href="#reviews">REVIEWS</a></li>
+            <li><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li><a class="nav-link" href="#services">SERVICES</a></li>
+            <li><a class="nav-link" href="#faq">FAQ</a></li>
+            <li><a class="nav-link" href="#book-appointment">BOOK APPOINTMENT</a></li>
         </ul>
     </nav>
-    <div id="main-content"></div>
+    <div id="main-content">
+        <div id="about-container"></div>
+        <div id="gallery-container"></div>
+        <div id="reviews-container"></div>
+        <div id="contact-container"></div>
+        <div id="about-container"></div>
+    </div>
     <footer></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
