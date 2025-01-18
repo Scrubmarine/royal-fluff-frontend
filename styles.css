@@ -10,10 +10,14 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #logo {
-    width: 16rem;
+    height: 6rem;
 }
 
 #social-container {
@@ -33,11 +37,14 @@ header {
 }
 
 nav {
+    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(117, 117, 117);
     height: 30px;
+    top: 6.3rem;
+    z-index: 999;
 }
 #navbar-list {
     display: flex;
