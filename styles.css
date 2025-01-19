@@ -1,3 +1,9 @@
+:root {
+    --primary-color: rgba(0, 0, 0, 0.6);
+    --hover-color: #ddd;
+    --font-size-large: 3rem;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -45,8 +51,8 @@ header {
 
 nav {
     display: none;
-    margin: 0; /* Ensure no margin on nav */
-    padding: 0; /* Reset any padding */
+    margin: 0;
+    padding: 0;
     position: sticky;
     left: 0;
     width: 100%;
@@ -62,12 +68,12 @@ nav {
 }
 
 .nav-link {
-    display: inline-block; /* Treat the link as a block for alignment */
-    text-align: center; /* Center text horizontally */
-    vertical-align: middle; 
-    font-weight: 100; /* Thinnest weight */
-    color: rgba(0, 0, 0, 0.6); /* Add transparency */
-    filter: brightness(120%); /* Enhance lightness */
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 100;
+    color: var(--primary-color);
+    filter: brightness(120%);
     text-decoration: none;
     font-size: 3rem;
     padding: .3rem;
@@ -77,7 +83,7 @@ li {
 }
 
 .nav-link:hover {
-    color: #ddd;  /* Change color on hover */
+    color: #ddd;
 }
 
 nav.open {
@@ -103,4 +109,18 @@ nav.open {
 footer {
     height: 15rem;
     background-color: rgb(117, 117, 117);
+}
+
+/* Styles for tablets (601px and up) */
+@media (min-width: 601px) {
+    .example {
+        font-size: 1.5rem;
+    }
+}
+
+/* Styles for desktops (1024px and up) */
+@media (min-width: 1024px) {
+    .example {
+        font-size: 2rem; /* Overrides the 601px+ rule for desktops */
+    }
 }
