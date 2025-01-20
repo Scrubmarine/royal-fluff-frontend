@@ -35,7 +35,7 @@ header {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-#close-icon, #user-icon, .social-icon {
+#close-icon, .user-icon, .social-icon {
     display: none;
 }
 
@@ -57,6 +57,11 @@ nav {
     left: 0;
     width: 100%;
     background-color: white;
+}
+
+.nav-icon {
+    height: 3rem;
+    padding: .5rem;
 }
 
 #navbar-list {
@@ -109,7 +114,22 @@ nav.open {
 footer {
     height: 15rem;
     background-color: rgb(117, 117, 117);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
 }
+.footer-info {
+    color: white;
+    font-size: 1rem;
+    padding: .3rem;
+}
+.footer-icon {
+    height: 3rem;
+    padding: .5rem;
+}
+
 
 /* Styles for tablets (601px and up) */
 @media (min-width: 601px) {
